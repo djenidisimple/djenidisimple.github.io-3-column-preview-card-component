@@ -1,0 +1,121 @@
+:root {
+    --gold-500: hsl(31, 77%, 52%);
+    --cyan-800: hsl(184, 100%, 22%);
+    --green-950: hsl(179, 100%, 13%);
+    /* Neutral */
+    /* (paragraphs) */
+    --transparent-white : hsla(0, 0%, 100%, 0.75);
+    /* (background, headings, buttons) */
+    --gray-100 : hsl(0, 0%, 95%);
+}
+@font-face {
+    font-family: Lexend Deca;
+    src: url('./font/Lexend_Deca/LexendDeca-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: Big Shoulders;
+    src: url('./font/Big_Shoulders/BigShoulders-VariableFont_opsz\,wght.ttf');
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+html {
+    height: 100%;
+    margin: 0;
+}
+body {
+    font-family: Lexend Deca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    background: var(--gray-100);
+    font-size: 15px;
+    font-weight: 400;
+}
+footer {
+    width: 100%;
+    margin-top: 15px;
+}
+p {
+    color: var(--transparent-white);
+}
+header, button {
+    color: var(--gray-100);
+    font-family: Big Shoulders;
+    font-weight: 700;
+}
+header {
+    font-size: 34px;
+}
+button {
+    border: none;
+    width: 135px;
+    height: 45px;
+    border-radius: 28px;
+}
+button:hover {
+    cursor: pointer;
+    background: transparent;
+    color: var(--transparent-white);
+    border: 2px solid var(--transparent-white);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container > div {
+    width: 250px;
+    padding: 3em;
+    box-sizing: border-box;
+}
+.icon {
+    margin-bottom: 20px;
+}
+.content {
+    height: 210px;
+    margin-bottom: 2px;  
+}
+.button {
+    width: 100%;
+    height: auto;
+}
+.text-gold {
+    color: var(--gold-500);
+}
+.text-cyan {
+    color: var(--cyan-800);
+}
+.text-green {
+    color: var(--green-950);
+}
+.bg-gold {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: var(--gold-500);
+}
+.bg-cyan {
+    background-color: var(--cyan-800);
+}
+.bg-green {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: var(--green-950);
+}
+@media screen and (max-width: 767px) {
+    .container > div {
+        width: 320px;
+    }
+    .bg-gold {
+        border-radius: 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }   
+    .bg-green {
+        border-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
