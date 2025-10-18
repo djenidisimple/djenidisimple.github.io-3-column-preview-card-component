@@ -33,7 +33,7 @@ body {
     font-size: 15px;
     font-weight: 400;
 }
-footer {
+div.attribution {
     width: 100%;
     margin-top: 15px;
 }
